@@ -23,14 +23,14 @@ The route is computed with a **genetic algorithm**, an approach well suited to t
 - **Operators:** selection, crossover and mutation evolve the population over multiple generations
 - **Result:** the best route found is returned and displayed on the map
 
-The optimizer runs as a serverless function (Supabase Edge Function).
+The optimizer is implemented in TypeScript (src/genetic/optimizer.ts) and runs client-side in the browser, so routes are generated quickly without a dedicated backend.
 
 ## Tech stack
 
 | Area | Technologies |
 |---|---|
 | Frontend | React 18, TypeScript, Vite, Tailwind CSS, React Router v6, Zustand |
-| Backend | Supabase (PostgreSQL, Auth, Edge Functions, Row-Level Security) |
+| Backend | Supabase (PostgreSQL, Auth, Row-Level Security) |
 | Maps and APIs | Mapbox GL JS, OpenRouteService API, Google Places API |
 | Tooling | ESLint, Prettier |
 
@@ -54,5 +54,5 @@ The optimizer runs as a serverless function (Supabase Edge Function).
 ## Author
 
 **Estera-Daniela Prioteasa**
-Computer Science graduate, University Politehnica of Pitești
+Computer Science graduate, University Politehnica of Bucharest
 Bachelor's thesis
